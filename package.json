@@ -2,6 +2,7 @@
   "name": "pset-3-starter-code",
   "version": "1.0.0",
   "dependencies": {
+    "package-lock": "^1.0.1",
     "readline-sync": "1.4.10"
   }
 }
