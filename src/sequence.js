@@ -17,7 +17,7 @@ if (number1<number2 && number2<number3) {
     console.log("\nIncreasing.")
 } else if (number1 == number2 && number2 == number3) {
     console.log("\nEqual.")
-} else if (Number.isNaN(number1) || Number.isNaN(number2) || Number.isNaN(number3)) {
+} else if (Number.isNaN(number1) || Number.isNaN(number2) || Number.isNaN(number3)|| number1 >  Number.MAX_SAFE_INTEGER|| number2 >  Number.MAX_SAFE_INTEGER|| number3 >  Number.MAX_SAFE_INTEGER) {
     console.log("\nInvalid.")
 } else {
     console.log("\nUnordered.")
