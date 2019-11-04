@@ -44,5 +44,5 @@ if (grade ==  "A" || grade == "A+") {
   console.log("\nInvalid")
 }
 if (valid == 1) {
-console.log("Your GPA is "+gradeNumber+".")
+console.log("\nYour GPA is "+gradeNumber+".")
 }
