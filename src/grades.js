@@ -21,5 +21,6 @@ if (letter == 10 || letter == 5) {
 console.log("\nYou recieved an "+letterGrade+".")
 } else if (letter <=9 && letter >= 6){
   console.log("\nYou recieved a "+letterGrade+".")
-}  else
+}  else {
   console.log("\nInvalid.");
+}
