@@ -5,7 +5,9 @@ let number1 = Number(readlineSync.question("\n"));
 let number2 = Number(readlineSync.question());
 let number3 = Number(readlineSync.question());
 
-if (number1<number2 && number2<number3) {
+if (Number.isNaN(number1) || Number.isNaN(number2) || Number.isNaN(number3)|| number1 >  Number.MAX_SAFE_INTEGER|| number2 >  Number.MAX_SAFE_INTEGER|| number3 >  Number.MAX_SAFE_INTEGER || number1 < Number.MIN_SAFE_INTEGER ||number2 < Number.MIN_SAFE_INTEGER || number3 < Number.MIN_SAFE_INTEGER) {
+    console.log("\nInvalid.")
+} else if (number1<number2 && number2<number3) {
     console.log("\nStrictly increasing.")
 } else if (number1 > number2 && number2 > number3) {
     console.log("\nStrictly decreasing.")
@@ -17,8 +19,6 @@ if (number1<number2 && number2<number3) {
     console.log("\nIncreasing.")
 } else if (number1 == number2 && number2 == number3) {
     console.log("\nEqual.")
-} else if (Number.isNaN(number1) || Number.isNaN(number2) || Number.isNaN(number3)|| number1 >  Number.MAX_SAFE_INTEGER|| number2 >  Number.MAX_SAFE_INTEGER|| number3 >  Number.MAX_SAFE_INTEGER) {
-    console.log("\nInvalid.")
 } else {
     console.log("\nUnordered.")
 }

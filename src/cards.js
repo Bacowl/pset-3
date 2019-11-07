@@ -19,8 +19,8 @@ if (suitShort=="C") {
     var invalid=1
 }
 
-if (number == 1) {
-  var cardNumber="One"
+if (number == "A") {
+  var cardNumber="Ace"
 } else if (number == 2) {
     var cardNumber="Two"
 } else if (number == 3) {
